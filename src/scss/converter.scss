@@ -4,8 +4,9 @@
 	&__holder {
 		position: relative;
 		border: 1px solid #71B219;
-		border-bottom: 8px solid #71B219;
 		border-radius: 10px;
+		box-shadow: 0 4px 0 #71b219;
+		overflow: hidden;
 		padding: 30px;
 		margin-bottom: 30px;
 		@include media(md) {
