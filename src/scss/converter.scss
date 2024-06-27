@@ -2,7 +2,9 @@
 
 .converter {
 	&__holder {
+		position: relative;
 		border: 1px solid #71B219;
+		border-bottom: 8px solid #71B219;
 		border-radius: 10px;
 		padding: 30px;
 		margin-bottom: 30px;
