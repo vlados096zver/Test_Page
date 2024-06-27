@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Test</title>
+
+        <link rel="stylesheet" href="src/fonts/fonts.css">
+        <link rel="stylesheet" href="dist/css/styles.css">
+    </head>
+    <body>
+
+    	<header class="header">
+    		<div class="container">
+                <div class="header__holder">
+    				<div class="header__wrap">
+    				  <p class="header__desc">Online Trading Starts Here</p>
+    				  <a href="#" class="header__logo">
+    				  	<img src="src/img/icons/logo.svg" alt="logo">
+    				  </a>
+    				  <div class="header__inner">
+    				  	<button class="btn btn--sign">Sign In</button>
+    				  	<button class="btn btn--reg">Register</button>
+    				  </div>
+    				  <div class="header__block">
+    			          <div class="mobile-wrap">
+    			            <div class="main-nav__toggle">
+    			              <span class="line-burger"></span>
+    			            </div>
+    			          </div>
+    			          <ul class="header__list" style="">  
+    			            <li>
+    			              <a href="#" class="header__link active">Best brokers</a>
+    			           </li>
+    			           <li>
+    			              <a href="#" class="header__link">Trading guides</a>
+    			           </li>
+    			           <li>
+    			              <a href="#" class="header__link">Broker reviews</a>
+    			           </li>
+    			           <li>
+    			              <a href="#" class="header__link">Price predictions</a>
+    			           </li>
+    			            <li>
+    			              <a href="#" class="header__link">Price Brokers by countries</a>
+    			           </li>
+    			           <li>
+    			              <a href="#" class="header__link">Who we are</a>
+    			           </li>
+    			          </ul>
+    			          <div class="header__info">
+    			          	<a class="header__point header__point--search">
+    			          		<img src="src/img/icons/search.svg" alt="search">
+    			          	</a>
+    			          	<a class="header__point">
+    			          		<img src="src/img/icons/lang.svg" alt="lang">
+    			          	</a>
+    			          </div>
+    		          </div>
+    		        </div>
+                    <div class="header__row">
+                      <input type="text" class="header__search" placeholder="Search">
+                     <button type="button" class="header__btn">
+                         <img src="src/img/icons/search.svg" alt="search">
+                     </button>  
+                    </div>
+                </div>
+	        </div>
+	    </header>
+
+    	<section class="breadcrumbs">
+	    	<div class="container">
+	    		<div class="breadcrumbs__inner">
+		    		<ul class="breadcrumbs__list">
+					  <li><a href="">Traders Union</a></li>
+					  <li><a href="">Live quotes and charts</a></li>
+					  <li>EUR/USD</li>
+					</ul>
+					<a target="_blank" href="https://tradersunion.com/brokers/forex/view/roboforex/" class="breadcrumbs__elem">Advertiser Disclosure</a>
+				</div>
+	    	</div>	
+    	</section>
+
+    	<section class="currency">	
+    		<div class="container">
+	    		<p class="currency__title">EUR/USD - Euro US Dollar</p>
+	    		<div class="currency__wrap">
+	    			<div class="currency__holder">
+	    				<p class="currency__number">1.0873</p>
+	    				<p class="currency__percent">+0.24%</p>
+	    			</div>
+	    			<div class="currency__info">
+	    				<p class="currency__time">Real-time Data 12:05:46</p>
+	    				<p class="currency__disclaimer">Disclaimer</p>
+	    			</div>
+	    			<div class="current__block">
+	    				<div class="currency__box">
+	    				  <p class="currency__text">Week change</p>
+	    				  <p class="currency__count">1.0762</p>
+	    				  <div class="currency__line">
+	    				  	<svg xmlns="http://www.w3.org/2000/svg" width="340" height="10" viewBox="0 0 340 10" fill="none">
+                               <path d="M0.5 5H324" stroke="#539100"/>
+                               <path d="M324 5H330" stroke="#D3D3D4"/>
+                               <path d="M330 5L324 9.5L324 0.5L330 5Z" fill="#539100"/>
+                               <path d="M330 5H340" stroke="#D3D3D4"/>
+                            </svg>
+	    				  </div>
+	    				  <p class="currency__count">1.0810</p>
+	    				</div>
+	    				<div class="currency__box">
+	    				  <p class="currency__text">Month change</p>
+	    				  <p class="currency__count">1.0762</p>
+	    				  <div class="currency__line">
+	    				  	<svg xmlns="http://www.w3.org/2000/svg" width="340" height="10" viewBox="0 0 340 10" fill="none">
+								<path d="M340 5L16.5 5" stroke="#CC5249"/>
+								<path d="M16.5 5L10.5 5" stroke="#D3D3D4"/>
+								<path d="M10.5 5L16.5 0.499999L16.5 9.5L10.5 5Z" fill="#CC5249"/>
+								<path d="M10.5 5L0.5 5" stroke="#D3D3D4"/>
+							</svg>
+	    				  </div>
+	    				  <p class="currency__count">1.0910</p>
+	    				</div>
+	    			</div>	
+	    		</div>
+	    	</div>
+    	</section>
+
+    	<section class="info">
+    		<div class="container">
+    			<div class="info__inner">
+    				<ul class="info__list">
+    					<li class="info__link active" data-filter="Currency pairs">Currency pairs</li>
+    					<li class="info__link" data-filter="Cryptocurrencies">Cryptocurrencies</li>
+    					<li class="info__link" data-filter="Stocks">Stocks</li>
+    					<li class="info__link" data-filter="Indices">Indices</li>
+    					<li class="info__link" data-filter="Commodities">Commodities</li>
+    				</ul>
+    				<div class="info__share">
+    					<p class="info__add">Share:</p>
+    					<a href="#" target="_blank" class="info__icon">
+    						<img src="src/img/icons/facebook.svg" alt="facebook">
+    					</a>
+    					<a href="#" target="_blank" class="info__icon">
+    						<img src="src/img/icons/twitter.svg" alt="twitter">
+    					</a>
+    				</div>
+    				<div class="custom-select__wrapper custom-select__wrapper--info">
+                        <div class="custom-select__block">
+                            <select class="custom-select__inner filter-select">
+                                <option value="Currency pairs">Currency pairs</option>
+                                <option value="Cryptocurrencies">Cryptocurrencies</option>
+                                <option value="Stocks">Stocks</option>
+                                <option value="Indices">Indices</option>
+                                <option value="Commodities">Commodities</option>
+                            </select>
+                        </div>
+                    </div>
+    			</div>
+    		</div>
+    		<div class="container">
+    			<div class="info__holder">
+    				<div class="info__wrap">
+    					<div class="info__item" data-category="Currency pairs">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="top">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    					<div class="info__item" data-category="Currency pairs">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="top">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    					<div class="info__item" data-category="Currency pairs">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="top">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    					<div class="info__item" data-category="Currency pairs">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="top">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    					<div class="info__item" data-category="Currency pairs">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="top">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    					<div class="info__item" data-category="Cryptocurrencies">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="top">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    					<div class="info__item" data-category="Stocks">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="top">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    					<div class="info__item" data-category="Stocks">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="top">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    					<div class="info__item" data-category="Indices">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="v">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    					<div class="info__item" data-category="Commodities">
+    						<div class="info__box">
+    							<img src="src/img/icons/top.svg" alt="v">
+    						</div>
+    						<div class="info__content">
+    						    <div class="info__row">
+    							   <p class="info__val">LTC/USD</p>
+    						       <p class="info__elem">+0.19%</p>
+    						    </div>
+    						   <div class="info__row">
+    							  <p class="info__count">1.0798</p>
+    							  <p class="info__point">+0.19%</p>
+    						    </div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+
+    	<section class="content">
+    		<div class="container">
+				 <div class="content__list">
+			        <p class="content__box">Current Outlook</p>
+			        <p class="content__box">Technicals and Signals</p>
+			        <p class="content__box active">Long Term Forecast</p>
+		        </div>
+		     </div>
+			<div class="container">
+		    	<div class="content__wrap">
+		    		<div class="content__item content__item--block">
+		    			<p class="content__subtitle">EUR/USD Price Forecast for 2024, 2025</p>
+		    			<div class="converter__holder">
+		    				<div class="converter__inner">
+			    				<p class="converter__subtitle">Converter</p>
+			    				<div class="converter__row">
+			    					<div class="converter__col">
+			    						<input value="1000" 
+                                        class="converter__input usdInput">
+			    						<p class="converter__text">USD</p>
+			    					</div>
+			    					<button class="converter__btn"></button>
+			    					<div class="converter__col">
+			    						<input value="0,0149"
+                                        class="converter__input btcInput">
+			    						<p class="converter__text">BTC</p>
+			    					</div>
+			    				</div>
+		    				</div>
+		    				<div class="converter__info">
+			    				<div class="converter__box">
+			    					<p class="converter__elem">Prev. Close</p>
+			    					<p class="converter__number">1.0777</p>
+			    				</div>
+			    				<div class="converter__box">
+			    					<p class="converter__elem">Month Range</p>
+			    					<p class="converter__number">1.0762-1.0825</p>
+			    				</div>
+			    				<div class="converter__box">
+			    					<p class="converter__elem">Open</p>
+			    					<p class="converter__number">1.0082</p>
+			    				</div>
+			    				<div class="converter__box">
+			    					<p class="converter__elem">52 wk Range</p>
+			    					<p class="converter__number">1.0062-1.0082</p>
+			    				</div>
+		    				</div>
+		    				<button type="button" class="btn btn--converter">START TRADING XRP/USD</button>
+		    				<div class="converter__desc">
+		    					<span class="converter__add">ad</span>
+		    					<span class="converter__risk">Your capital is at risk</span>
+		    				</div>		
+		    			</div>
+		    			<p class="content__subtitle">Euro / U.S Dollar Forecast</p>
+		    			<div class="advantages__wrap">
+		    				<div class="advantages__item">
+		    					<p class="advantages__text">Current Bitcoin (BTC) price XXX.</p>
+		    				</div>
+		    				<div class="advantages__item">
+		    					<p class="advantages__text">According to analytical forecasts, the price of EUR/USD may reach XXX by the end of 2024, and it is expected to be XXX by the end of 2025.</p>
+		    				</div>
+		    				<div class="advantages__item">
+		    					<p class="advantages__text">Based on technical analysis indicators, the recommendation for the D1 (one-day) timeframe is YYY, and for the W1 (one-week) timeframe - YYY.</p>
+		    				</div>
+		    			</div>
+		    			<div class="advantages__block">
+		    				<p>Bitcoin is the most expensive and popular cryptocurrency that enjoys wide popularity as an effective means of payment and an excellent investment option for your savings. The key feature of Bitcoin is the limited number of emissions at the software level. The dollars and euros are being “printed” actively, while the number of newly coined Bitcoins is continuously dropping whereas the demand remains high.</p>
+		    			</div>
+		    			<div class="trading__wrap">
+		    				<div class="trading__item">
+		    					<div class="trading__info">
+			    					<p class="trading__title">Strong Buy</p>
+			    					<div class="trading__text">
+			    						<p>Recommendation for BTC/USD on the timeframe</p>
+			    					</div>
+		    					</div>
+		    					<p class="trading__elem">1Н</p>
+		    				</div>
+		    				<div class="trading__item">
+		    					<div class="trading__info">
+			    					<p class="trading__title">Strong Sell</p>
+			    					<div class="trading__text">
+			    						<p>Recommendation for BTC/USD on the timeframe</p>
+			    					</div>
+			    				</div>
+		    					<p class="trading__elem">4Н</p>
+		    				</div>
+		    				<div class="trading__item">
+		    					<div class="trading__info">
+			    					<p class="trading__title">Neutral</p>
+			    					<div class="trading__text">
+			    						<p>Recommendation for BTC/USD on the timeframe</p>
+			    					</div>
+			    				</div>
+		    					<p class="trading__elem">1D</p>
+		    				</div>
+		    			</div>
+		    			<div class="trading__block">
+		    				<div class="trading__desc">
+		    				  <p>Traders Union a custom-made model based on a combination of various data and models.</p>
+		    				</div>
+		    				<a href="#" target="_blank" class="trading__link">Learn more about how we do it in our methodology</a>
+		    			</div>
+		    			<p class="content__subtitle">EUR/USD price prediction for 2024-2025 by months</p>
+		    			<div class="content__desc">
+		    				<p>The table below shows the forecasts as of the end of each month in 2024, according to TU analysts price prediction.</p>
+		    			</div>
+		    			<div class="content__holder">	
+					    	<table class="content__table">
+					    		<thead>
+						    		<tr>
+						    			<th class="content__head">Month</th>
+						    			<th class="content__head">Minimum Price</th>
+						    			<th class="content__head">Maximum Price</th>
+						    			<th class="content__head">Average Price</th>
+						    		</tr>
+					    		</thead>
+					    		<tbody>
+						    		<tr>
+						    			<td class="content__value">June 2024</td>
+						    			<td class="content__value">$59,944.84</td>
+						    			<td class="content__value">$73,265.92</td>
+						    			<td class="content__value">$66,605.38</td>
+						    		</tr>
+						    		<tr>
+						    			<td class="content__value">July 2024</td>
+						    			<td class="content__value">$60,244.57</td>
+						    			<td class="content__value">$73,632.25</td>
+						    			<td class="content__value">$66,938.41</td>
+						    		</tr>
+						    		<tr>
+						    			<td class="content__value">August 2024</td>
+						    			<td class="content__value">$60,545.79</td>
+						    			<td class="content__value">$74,000.41</td>
+						    			<td class="content__value">$67,273.1</td>
+						    		</tr>
+						    		<tr>
+						    			<td class="content__value">September 2024</td>
+						    			<td class="content__value">$60,848.52</td>
+						    			<td class="content__value">$74,370.42</td>
+						    			<td class="content__value">$67,609.47</td>
+						    		</tr>
+					    		</tbody>
+					    	</table>
+				    	</div>
+				    	<div class="price__holder">	
+	                        <div class="custom-select__wrapper price">
+	                            <div class="custom-select__block">
+	                                <select class="custom-select__inner price-select">
+	                                    <option value="June2024">June 2024</option>
+	                                    <option value="July2024">July 2024	</option>
+	                                    <option value="August2024">August 2024</option>
+	                                    <option value="September2024">September 2024</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="price__content">
+		                        <div class="price__item" data-price="June2024">
+		                        	<div class="price__col">
+		                        		<p class="price__title">Minimum Price</p>
+		                        		<p class="price__value">$59,944.84</p>
+		                        	</div>
+		                        	<div class="price__col">
+		                        		<p class="price__title">Maximum Price</p>
+		                        		<p class="price__value">$73,265.92</p>
+		                        	</div>
+		                        	<div class="price__col">
+		                        		<p class="price__title">Average Price</p>
+		                        		<p class="price__value">$66,605.38</p>
+		                        	</div>
+		                        </div>
+		                        <div class="price__item" data-price="July2024" style="display: none">
+		                        	<div class="price__col">
+		                        		<p class="price__title">Minimum Price</p>
+		                        		<p class="price__value">$60,244.57</p>
+		                        	</div>
+		                        	<div class="price__col">
+		                        		<p class="price__title">Maximum Price</p>
+		                        		<p class="price__value">$73,632.25</p>
+		                        	</div>
+		                        	<div class="price__col">
+		                        		<p class="price__title">Average Price</p>
+		                        		<p class="price__value">$66,938.41</p>
+		                        	</div>
+		                        </div>
+		                        <div class="price__item" data-price="August2024" style="display: none">
+		                        	<div class="price__col">
+		                        		<p class="price__title">Minimum Price</p>
+		                        		<p class="price__value">$60,545.79</p>
+		                        	</div>
+		                        	<div class="price__col">
+		                        		<p class="price__title">Maximum Price</p>
+		                        		<p class="price__value">$74,000.41</p>
+		                        	</div>
+		                        	<div class="price__col">
+		                        		<p class="price__title">Average Price</p>
+		                        		<p class="price__value">$67,273.1</p>
+		                        	</div>
+		                        </div>
+		                        <div class="price__item" data-price="September2024" style="display: none">
+		                        	<div class="price__col">
+		                        		<p class="price__title">Minimum Price</p>
+		                        		<p class="price__value">$60,848.52</p>
+		                        	</div>
+		                        	<div class="price__col">
+		                        		<p class="price__title">Maximum Price</p>
+		                        		<p class="price__value">$74,370.42</p>
+		                        	</div>
+		                        	<div class="price__col">
+		                        		<p class="price__title">Average Price</p>
+		                        		<p class="price__value">$67,609.47</p>
+		                        	</div>
+		                        </div>
+	                        </div>
+				    	</div>
+				    	<p class="content__subtitle">EUR/USD price prediction for 2024-2025 by months</p>
+				    	<div class="content__chart">
+					    	<canvas id="myChart"></canvas>
+					    </div>
+		    		</div>
+		    		<div class="content__item content__item--aside">
+		    			<div class="adv__col adv__col--bonus">
+		    				<p class="adv__excerpt">ad</p>
+		    				<div class="adv__image">
+			    				<img src="src/img/icons/pocket.png" alt="pocket">
+			    			</div>
+			    			<p class="adv__title">50% Deposit Bonus</p>
+			    			<div class="adv__text">
+			    				<p>Open an account on PocketOption, deposit any amount and get 15% more money for successful trading.</p>
+			    			</div>
+			    			<button class="btn" type="button">Receive Bonus</button>
+			    			<p class="adv__risk">Your capital is at risk</p>
+		    			</div>
+		    			<div class="adv__col">	
+		    				<p class="adv__subtitle">Top 3 <span>Gainers</span> Over the Last 30 Days</p>
+		    				<ul class="tabs__list">
+		    					<li class="tabs__box active">Forex</li>
+		    					<li class="tabs__box">Stocks</li>
+		    					<li class="tabs__box">Crypto</li>
+		    					<li class="tabs__box">Commodities</li>
+		    				</ul>
+		    				<div class="tabs__content">
+		    					<div class="tabs__item">
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">BTC/USD</p>
+		    							<p class="tabs__value tabs__value--percent">+0.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">USD/CAD</p>
+		    							<p class="tabs__value tabs__value--percent">-0.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">USD/INR</p>
+		    							<p class="tabs__value tabs__value--percent">+0.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    					</div>
+		    					<div class="tabs__item" style="display: none">
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">BTC/USD</p>
+		    							<p class="tabs__value tabs__value--percent">+2%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">USD/CAD</p>
+		    							<p class="tabs__value tabs__value--percent">-2.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">USD/INR</p>
+		    							<p class="tabs__value tabs__value--percent">+0.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    					</div>
+		    					<div class="tabs__item" style="display: none">
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">BTC/USD</p>
+		    							<p class="tabs__value tabs__value--percent">+1%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">USD/CAD</p>
+		    							<p class="tabs__value tabs__value--percent">-1.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">USD/INR</p>
+		    							<p class="tabs__value tabs__value--percent">+1.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    					</div>
+		    					<div class="tabs__item" style="display: none">
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">BTC/USD</p>
+		    							<p class="tabs__value tabs__value--percent">+3%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">USD/CAD</p>
+		    							<p class="tabs__value tabs__value--percent">-3.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">USD/INR</p>
+		    							<p class="tabs__value tabs__value--percent">+3.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="adv__col">	
+		    				<p class="adv__subtitle adv__subtitle--lose">Top 3 <span>Losers</span> Over the Last 30 Days</p>
+		    				<ul class="tabs__list">
+		    					<li class="tabs__box active">Forex</li>
+		    					<li class="tabs__box">Stocks</li>
+		    					<li class="tabs__box">Crypto</li>
+		    					<li class="tabs__box">Commodities</li>
+		    				</ul>
+		    				<div class="tabs__content">
+		    					<div class="tabs__item">
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">LTC/USD</p>
+		    							<p class="tabs__value tabs__value--percent">+0.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">BNB/USD</p>
+		    							<p class="tabs__value tabs__value--percent">-0.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">MATIC/INR</p>
+		    							<p class="tabs__value tabs__value--percent">+0.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    					</div>
+		    					<div class="tabs__item" style="display: none">
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">LTC/USD</p>
+		    							<p class="tabs__value tabs__value--percent">+2%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">BNB/USD</p>
+		    							<p class="tabs__value tabs__value--percent">-2.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">MATIC/INR</p>
+		    							<p class="tabs__value tabs__value--percent">+0.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    					</div>
+		    					<div class="tabs__item" style="display: none">
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">LTC/USD</p>
+		    							<p class="tabs__value tabs__value--percent">+1%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">BNB/USD</p>
+		    							<p class="tabs__value tabs__value--percent">-1.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">MATIC/INR</p>
+		    							<p class="tabs__value tabs__value--percent">+1.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    					</div>
+		    					<div class="tabs__item" style="display: none">
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">LTC/USD</p>
+		    							<p class="tabs__value tabs__value--percent">+3%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">BNB/USD</p>
+		    							<p class="tabs__value tabs__value--percent">-3.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    						<div class="tabs__col">
+		    							<p class="tabs__value">MATIC/INR</p>
+		    							<p class="tabs__value tabs__value--percent">+3.19%</p>
+		    							<button type="button" class="tabs__value tabs__value--btn">
+		    								<img src="src/img/icons/next.svg" alt="">
+		    							</button>
+		    						</div>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="adv__col">	
+		    				<p class="adv__subtitle">Long-term forecast based on technical analysis</p>
+		    				<ul class="tabs__list">
+		    					<li class="tabs__box active">Forex</li>
+		    					<li class="tabs__box">Stocks</li>
+		    					<li class="tabs__box">Crypto</li>
+		    					<li class="tabs__box">Commodities</li>
+		    				</ul>
+		    				<div class="tabs__content">
+		    					<div class="tabs__item">
+		    						<table class="table__col">
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>0.6087</td>
+		    								<td>Strong Buy</td>
+		    							</tr>
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>0.6087</td>
+		    								<td>Sell</td>
+		    							</tr>
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>0.6087</td>
+		    								<td>Sell</td>
+		    							</tr>
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>0.6087</td>
+		    								<td>Strong Buy</td>
+		    							</tr>
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>0.6087</td>
+		    								<td>Strong Buy</td>
+		    							</tr>
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>0.6087</td>
+		    								<td>Strong Buy</td>
+		    							</tr>
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>0.6087</td>
+		    								<td>Sell</td>
+		    							</tr>
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>0.6087</td>
+		    								<td>Sell</td>
+		    							</tr>
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>0.6087</td>
+		    								<td>Strong Buy</td>
+		    							</tr>
+		    						</table>
+		    					</div>
+		    					<div class="tabs__item" style="display: none">
+		    						<table class="table__col">
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>2.6087</td>
+		    								<td>Strong Buy</td>
+		    							</tr>
+		    						</table>
+		    					</div>
+		    					<div class="tabs__item" style="display: none">
+		    						<table class="table__col">
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>3.6087</td>
+		    								<td>Strong Buy</td>
+		    							</tr>
+		    						</table>
+		    					</div>
+		    					<div class="tabs__item" style="display: none">
+		    						<table class="table__col">
+		    							<tr>
+		    								<td>BTC/USD</td>
+		    								<td>4.6087</td>
+		    								<td>Strong Buy</td>
+		    							</tr>
+		    						</table>
+		    					</div>
+		    				</div>
+		    				<div class="adv__desc">
+		    					<p>For this calculation our algorithm uses data on a weekly interval of technical indicators: MA, RSI, CCI, ADX, MACD, Momentum, Ichimoku, etc.</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+	    	</div>
+    	</section>
+ 
+        
+        <script src="src/js/chart.js"></script>
+        <script src="dist/js/main.js"></script>
+
+    </body>
+</html>

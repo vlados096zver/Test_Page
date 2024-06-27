@@ -1,0 +1,98 @@
+@import 'responsive.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0px;
+  font-family: OpenSans, sans-serif;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1873EB;
+  border: 1px solid #1873EB;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: OpenSans, sans-serif;
+  transition: 0.25s background-color, 0.25s border, 0.25s color;
+  @include media(sm) {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+  &:hover {
+    background-color: #125ab8;
+    border-color: #125ab8;
+  }
+  &--sign {
+    border: 1px solid rgba(44, 100, 235, 0.15);
+    color: #000000;
+    background-color: rgba(44, 100, 235, 0.07);
+    &:hover {
+      border-color: #1873EB;
+      background-color: #1873EB;
+      color: #fff;
+    }
+  }
+  &--sign,
+  &--reg {
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px 15px;
+    padding-bottom: 9px;
+  }
+  &--converter {
+    max-width: 370px;
+    margin: 0 auto;
+  }
+}
+
+.info__wrap,
+.breadcrumbs__list,
+.content__list {
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  scrollbar-width: none;     /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Edge, Safari */
+  }
+}
+
+@import 'reset';
+@import 'header';
+@import 'breadcrumbs';
+@import 'currency';
+@import 'content';
+@import 'converter';
+@import 'advantages';
+@import 'adv';
+@import 'table';
+@import 'trading';
+@import 'custom-select';
+@import 'tabs';
+@import 'info';
+@import 'price';

@@ -1,0 +1,31 @@
+@import 'responsive';
+
+.price {
+	&__holder {
+		display: none;
+		border: 1px solid rgb(225, 225, 225);
+		border-radius: 10px;
+		background: rgb(255, 255, 255);
+		margin-bottom: 20px;
+		@include media(sm) {
+			display: block;
+		}
+	}
+	&__col {
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			border-bottom: 1px solid #E1E1E1;
+		}
+	}
+	&__title,
+	&__value {
+		font-size: 14px;
+		line-height: 1.75;
+		padding: 18px 16px;
+	}
+	&__title {
+		color: #404040;
+		min-width: 158px;
+	}
+}

@@ -1,0 +1,127 @@
+@import 'responsive';
+
+.info {
+	background-color: #F9F9F9;
+	padding: 16px 0;
+	margin-bottom: 20px;
+	.container {
+		&:last-child {
+			@include media(md) {
+				padding-right: 0;
+			}
+		}
+	}
+	&__list {
+		display: flex;
+		gap: 0 4px;
+		@include media(sm) {
+		 	display: none;
+		}
+	}
+	&__link {
+		cursor: pointer;
+		font-size: 14px;
+		line-height: 1.7;
+		color: #4F4F4F;
+		padding: 5px 16px;
+		text-transform: uppercase;
+		border: 1px solid transparent;
+		font-weight: 600;
+		@include media(md) {
+			padding: 5px 12px;
+		}
+		&.active {
+			color: #2C64EB;
+			border: 1px solid rgba(44, 100, 235, 0.35);
+			border-radius: 50px;
+			background: rgba(44, 100, 235, 0.07);
+		}
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 16px;
+		@include media(sm) {
+			display: block;
+		}
+	}
+	&__wrap {
+		display: flex;
+		gap: 0 10px;
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	&__item {
+		max-width: 226px;
+		flex: 1;
+		display: flex;
+		border: 1px solid rgb(225, 225, 225);
+		border-radius: 10px;
+		background: rgb(255, 255, 255);
+		padding: 10px;
+	}
+	&__box {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 6px;
+		background: rgba(83, 145, 0, 0.07);
+	}
+	&__content {
+		width: calc(100% - 40px);
+		padding-left: 10px;
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__val {
+		font-size: 14px;
+		line-height: 1.35;
+		color: rgba(0, 0, 0, 0.7);
+		padding-right: 5px;
+		font-weight: 600;
+	}
+	&__count {
+		font-size: 18px;
+		line-height: 1.35;
+		font-weight: 600;
+		@include media(md) {
+			font-size: 16px;
+		}
+	}
+	&__elem {
+		font-size: 14px;
+		line-height: 1.35;
+		color: rgb(83, 145, 0);
+		padding-right: 5px;
+		font-weight: 600;
+	}
+	&__point {
+		font-size: 14px;
+		line-height: 1.35;
+		color: rgb(83, 145, 0);
+	}
+	&__share {
+		display: flex;
+		align-items: center;
+		gap: 0 20px;
+		@include media(sm) {
+			justify-content: flex-end;
+			margin-bottom: 16px;
+		}
+	}
+	&__add {
+		font-size: 11px;	
+	}
+	&__icon {
+		img {
+			display: block;	
+			max-width: 100%;
+		}
+	}
+}

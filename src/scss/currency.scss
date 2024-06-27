@@ -1,0 +1,96 @@
+@import 'responsive';
+
+.currency {
+	&__title {
+		font-size: 36px;
+		line-height: 1.35;
+		padding-bottom: 20px;
+		font-weight: 700;
+		@include media(md) {
+			font-size: 30px;
+		}
+		@include media(sm) {
+			font-size: 24px;
+			padding-bottom: 16px;
+		}
+	}
+	&__wrap {
+		display: flex;
+		margin-bottom: 30px;
+		@include media(md) {
+			display: none;
+		}
+	}
+	&__holder {
+		display: flex;
+		align-items: center;
+		border-radius: 6px;
+		background: rgba(83, 145, 0, 0.07);
+		padding: 16px;
+		margin-right: 16px;
+	}
+	&__number {
+		font-size: 36px;
+		line-height: 1.35;
+		padding-right: 16px;
+		font-weight: 700;
+	}
+	&__percent {
+		background-image: url(../../src/img/icons/top.svg);
+		background-repeat: no-repeat;
+		background-position: right 0px center;
+		background-size: 24px;
+		font-size: 21px;
+		line-height: 1.35;
+		color: #539100;
+		padding-right: 22px;
+		font-weight: 700;
+	}
+	&__info {
+		min-width: 160px;
+		background-image: url(../../src/img/icons/time.svg);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 18px;
+		padding-left: 28px;
+		padding-right: 30px;
+		margin-right: auto;
+	}
+	&__time {
+		font-size: 14px;
+		line-height: 1;
+		margin-bottom: 5px;
+	}
+	&__disclaimer {
+		display: inline-block;
+		font-size: 12px;
+		line-height: 1.2;
+		color: rgb(64, 64, 64);
+		padding-bottom: 4px;
+		border-bottom: 1px dashed #404040;
+	}
+	&__box {
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 14px;
+		}
+	}
+	&__text {
+		min-width: 116px;
+		font-size: 14px;
+		line-height: 1.35;
+	}
+	&__count {
+		font-size: 16px;
+		line-height: 1.35;
+		font-weight: 600;
+	}
+	&__line {
+		padding: 0 6px;
+		svg {
+			display: block;
+			max-width: 100%;
+		}
+	}
+}

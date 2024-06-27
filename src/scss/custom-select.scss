@@ -1,0 +1,95 @@
+@import 'responsive';
+
+.custom-select {
+    &__wrapper {
+        width: 100%;   
+        &.price {
+            padding: 16px;
+            background-color: #F9F9F9;
+            border-radius: 10px 10px 0 0;
+        }
+        &--info {
+            display: none;
+            @include media(sm) {
+                display: block;
+            }
+        }
+    }
+    &__block {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        select {
+            display: none; 
+        }
+        &:before {
+            content: attr(data-content);
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            color: #4F4F4F;
+            border-radius: 6px;
+            padding: 8px 16px;
+            padding-right: 36px;
+            border: 1px solid #D3D3D4;
+            background: #fff;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        &::after {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            z-index: 3;
+            width: 12px;
+            height: 12px;
+            content: " ";
+            background-image: url(../../src/img/icons/select-arrow.svg);
+            background-size: 12px;
+            background-repeat: no-repeat;
+            transform: translateY(-50%);
+            transition: transform .3s, top .3s;
+        }
+        &.active {
+            &:after {
+                top: calc(50% + 2px);
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+    }
+    &__options {
+        position: absolute;
+        z-index: 112;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        border-radius:  6px;
+        border: 1px solid #D3D3D4;
+        background-color: #fff;
+        display: none;
+        &.visible {
+            display: block;
+        }
+    }
+    &__item {
+        cursor: pointer;
+        font-size: 14px;    
+        padding: 8px 16px; 
+        color: #4F4F4F;
+        text-transform: uppercase;
+        font-weight: 600;
+        &.active {
+            background-color: #1873EB;
+            color: #fff;
+            &:first-child {
+                border-radius: 6px 6px 0 0;
+            }
+            &:last-child {
+              border-radius: 0 0 6px 6px;  
+            }
+        }
+    }
+   
+}
+
