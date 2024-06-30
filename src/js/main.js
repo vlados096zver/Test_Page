@@ -455,12 +455,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     customSelect.addEventListener('click', (event) => {
       event.stopPropagation();
+      const isVisible = customOptions.classList.contains('visible');
       document.querySelectorAll('.custom-select__options.visible').forEach(visibleOptions => {
         visibleOptions.classList.remove('visible');
         visibleOptions.remove();
       });
-      customSelect.appendChild(customOptions);
-      customOptions.classList.toggle('visible');
+      if (!isVisible) {
+        customSelect.appendChild(customOptions);
+        customOptions.classList.add('visible');
+      }
     });
 
     document.addEventListener('click', () => {
